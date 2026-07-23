@@ -20,7 +20,7 @@ import {
   imageJ,
   imageR,
   imageS,
-} from "../pages";
+} from "../assets/images";
 
 import aos from "aos";
 import "aos/dist/aos.css";
@@ -31,7 +31,7 @@ import { Nav, Footer } from "../components";
 function Home() {
   useEffect(() => {
     aos.init();
-  });
+  }, []);
   return (
     <>
       <div className="bg-slate-900">
@@ -82,7 +82,7 @@ function Home() {
                         Fullstack Engineer
                       </span>
                       <h1 className="md:text-5xl/tight text-4xl font-medium text-white max-w-lg my-4">
-                        RYAN MMBALE.
+                        RYAN MMBALEE.
                       </h1>
                       <p className="md:text-lg text-default-300">
                         I help creators and companies to design, develop, test,
@@ -107,27 +107,27 @@ function Home() {
                       <div className="marquee grid grid-cols-2 gap-6">
                         <div className="relative gap-6 m-auto flex flex-col overflow-hidden">
                           <div className="marquee-hero gap-6 flex flex-col items-center justify-around flex-shrink-0 min-h-full">
-                            <img
+                            <img loading="lazy" decoding="async"
                               className="aspect-1 object-cover rounded-xl h-full w-60"
                               src={imageK}
                               alt=""
                             />
-                            <img
+                            <img loading="lazy" decoding="async"
                               className="aspect-1 object-cover rounded-xl h-full w-60"
                               src={imageR}
                               alt=""
                             />
-                            <img
+                            <img loading="lazy" decoding="async"
                               className="aspect-1 object-cover rounded-xl h-full w-60"
                               src={imageJ}
                               alt=""
                             />
-                            <img
+                            <img loading="lazy" decoding="async"
                               className="aspect-1 object-cover rounded-xl h-full w-60"
                               src={imageK}
                               alt=""
                             />
-                            <img
+                            <img loading="lazy" decoding="async"
                               className="aspect-1 object-cover rounded-xl h-full w-60"
                               src={imageS}
                               alt=""
@@ -138,27 +138,27 @@ function Home() {
                             aria-hidden="true"
                             className="marquee-hero gap-6 flex flex-col items-center justify-around flex-shrink-0 min-h-full"
                           >
-                            <img
+                            <img loading="lazy" decoding="async"
                               className="aspect-1 object-cover rounded-xl h-full w-60"
                               src={imageD}
                               alt=""
                             />
-                            <img
+                            <img loading="lazy" decoding="async"
                               className="aspect-1 object-cover rounded-xl h-full w-60"
                               src={imageR}
                               alt=""
                             />
-                            <img
+                            <img loading="lazy" decoding="async"
                               className="aspect-1 object-cover rounded-xl h-full w-60"
                               src={imageJ}
                               alt=""
                             />
-                            <img
+                            <img loading="lazy" decoding="async"
                               className="aspect-1 object-cover rounded-xl h-full w-60"
                               src={imageK}
                               alt=""
                             />
-                            <img
+                            <img loading="lazy" decoding="async"
                               className="aspect-1 object-cover rounded-xl h-full w-60"
                               src={imageS}
                               alt=""
@@ -168,27 +168,27 @@ function Home() {
 
                         <div className="marquee-reverse gap-6 m-auto flex flex-col overflow-hidden">
                           <div className="marquee-hero gap-6 flex flex-col items-center justify-around flex-shrink-0 min-h-full">
-                            <img
+                            <img loading="lazy" decoding="async"
                               className="aspect-1 object-cover rounded-xl h-full w-60"
                               src={imageA}
                               alt=""
                             />
-                            <img
+                            <img loading="lazy" decoding="async"
                               className="aspect-1 object-cover rounded-xl h-full w-60"
                               src={imageE}
                               alt=""
                             />
-                            <img
+                            <img loading="lazy" decoding="async"
                               className="aspect-1 object-cover rounded-xl h-full w-60"
                               src={imageF}
                               alt=""
                             />
-                            <img
+                            <img loading="lazy" decoding="async"
                               className="aspect-1 object-cover rounded-xl h-full w-60"
                               src={imageG}
                               alt=""
                             />
-                            <img
+                            <img loading="lazy" decoding="async"
                               className="aspect-1 object-cover rounded-xl h-full w-60"
                               src={imageH}
                               alt=""
@@ -199,27 +199,27 @@ function Home() {
                             aria-hidden="true"
                             className="marquee-hero gap-6 flex flex-col items-center justify-around flex-shrink-0 min-h-full"
                           >
-                            <img
+                            <img loading="lazy" decoding="async"
                               className="aspect-1 object-cover rounded-xl h-full w-60"
                               src={imageA}
                               alt=""
                             />
-                            <img
+                            <img loading="lazy" decoding="async"
                               className="aspect-1 object-cover rounded-xl h-full w-60"
                               src={imageE}
                               alt=""
                             />
-                            <img
+                            <img loading="lazy" decoding="async"
                               className="aspect-1 object-cover rounded-xl h-full w-60"
                               src={imageF}
                               alt=""
                             />
-                            <img
+                            <img loading="lazy" decoding="async"
                               className="aspect-1 object-cover rounded-xl h-full w-60"
                               src={imageG}
                               alt=""
                             />
-                            <img
+                            <img loading="lazy" decoding="async"
                               className="aspect-1 object-cover rounded-xl h-full w-60"
                               src={imageH}
                               alt=""
@@ -350,7 +350,7 @@ function Home() {
                 data-aos-easing="ease"
                 data-aos-duration="1000"
               >
-                <img src={imageB} className="rounded-xl" alt="" />
+                <img loading="lazy" decoding="async" src={imageB} className="rounded-xl" alt="" />
                 <div className="absolute inset-0 bg-default-950/50 rounded-xl"></div>
                 <div className="hidden lg:block">
                   <div className="absolute top-10 -end-52">
@@ -431,7 +431,7 @@ function Home() {
                 data-aos-easing="ease"
                 data-aos-duration="1000"
               >
-                <img src={imageC} className="rounded-xl" alt="" />
+                <img loading="lazy" decoding="async" src={imageC} className="rounded-xl" alt="" />
                 <div className="absolute inset-0 bg-default-950/50 rounded-xl"></div>
                 <div className="hidden lg:block">
                   <div className="absolute top-10 -start-52">

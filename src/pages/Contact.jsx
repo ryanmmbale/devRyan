@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 function Contact() {
   useEffect(() => {
     aos.init();
-  });
+  }, []);
   return (
     <>
       <div className="bg-slate-900">

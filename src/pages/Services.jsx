@@ -11,7 +11,7 @@ import "aos/dist/aos.css";
 function Services() {
   useEffect(() => {
     aos.init();
-  });
+  }, []);
   return (
     <>
       <div className="bg-slate-900">

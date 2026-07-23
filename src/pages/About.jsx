@@ -16,7 +16,7 @@ import {
 import { Nav, Footer, ContactForm } from "../components";
 
 //Pages and images
-import { imageM, imageN } from "../pages";
+import { imageM, imageN } from "../assets/images";
 
 import aos from "aos";
 import "aos/dist/aos.css";
@@ -24,7 +24,7 @@ import "aos/dist/aos.css";
 function About() {
   useEffect(() => {
     aos.init();
-  });
+  }, []);
   return (
     <>
       <div className="bg-slate-900">
@@ -92,7 +92,7 @@ function About() {
                 data-aos-easing="ease"
                 data-aos-duration="1000"
               >
-                <img src={imageM} className="rounded-xl" alt="" />
+                <img loading="lazy" decoding="async" src={imageM} className="rounded-xl" alt="" />
                 <div className="absolute inset-0 bg-default-950/50 rounded-xl"></div>
                 <div className="hidden lg:block">
                   <div className="absolute top-10 -end-52">
@@ -176,7 +176,7 @@ function About() {
                 data-aos-easing="ease"
                 data-aos-duration="1000"
               >
-                <img src={imageN} className="rounded-xl" alt="" />
+                <img loading="lazy" decoding="async" src={imageN} className="rounded-xl" alt="" />
                 <div className="absolute inset-0 bg-default-950/50 rounded-xl"></div>
                 <div className="hidden lg:block">
                   <div className="absolute top-10 -start-52">

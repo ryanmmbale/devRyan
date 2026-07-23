@@ -1,4 +1,4 @@
-import { imageO, imageP, imageL } from "../pages";
+import { imageO, imageP, imageL } from "../assets/images";
 import Me from "../assets/me.jpeg";
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
@@ -147,12 +147,12 @@ function ContactForm() {
                 >
                   <div className="flex gap-4 md:gap-6 tilt">
                     <div className="flex flex-col gap-4 md:gap-6 pt-10 md:pt-16 w-full">
-                      <img
+                      <img loading="lazy" decoding="async"
                         src={Me}
                         className="w-full h-40 md:h-[278px] rounded-lg object-cover"
                         alt=""
                       />
-                      <img
+                      <img loading="lazy" decoding="async"
                         src={imageO}
                         className="w-full h-40 md:h-[278px] rounded-lg object-cover"
                         alt=""
@@ -165,12 +165,12 @@ function ContactForm() {
                           className="animate-[spin_10s_linear_infinite] h-12 w-12 fill-primary/20 text-transparent"
                         ></i>
                       </div>
-                      <img
+                      <img loading="lazy" decoding="async"
                         src={imageP}
                         className="w-full h-40 md:h-[278px] rounded-lg object-cover"
                         alt=""
                       />
-                      <img
+                      <img loading="lazy" decoding="async"
                         src={imageL}
                         className="w-full h-40 md:h-[278px] rounded-lg object-cover"
                         alt=""

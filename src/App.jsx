@@ -1,17 +1,23 @@
+import { lazy, Suspense } from "react";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import "./style/style.css";
 
 // Scripts
 import "./assets/js/preline";
 
-//Pages
-import { About, Home, Portfolio, Services, Contact, Skills } from "./pages";
+// Pages — lazy-loaded so each route ships as its own chunk
+const Home = lazy(() => import("./pages/Home"));
+const About = lazy(() => import("./pages/About"));
+const Portfolio = lazy(() => import("./pages/Portfolio"));
+const Skills = lazy(() => import("./pages/Skills"));
+const Services = lazy(() => import("./pages/Services"));
+const Contact = lazy(() => import("./pages/Contact"));
 
 function App() {
   return (
-    <>
-      <HashRouter>
-        <main>
+    <HashRouter>
+      <main>
+        <Suspense fallback={null}>
           <Routes>
             <Route index exact path="/" element={<Home />} />
             <Route index exact path="/portfolio" element={<Portfolio />} />
@@ -20,9 +26,9 @@ function App() {
             <Route index exact path="/services" element={<Services />} />
             <Route index exact path="/contact" element={<Contact />} />
           </Routes>
-        </main>
-      </HashRouter>
-    </>
+        </Suspense>
+      </main>
+    </HashRouter>
   );
 }
 

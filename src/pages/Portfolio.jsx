@@ -6,7 +6,7 @@ import { TbSettingsStar } from "react-icons/tb";
 import { Nav, Footer } from "../components";
 
 //Pages and images
-import { linker, sphere, key, crescent, qrcode } from "../pages";
+import { linker, sphere, key, crescent, qrcode } from "../assets/images";
 
 import aos from "aos";
 import "aos/dist/aos.css";
@@ -14,7 +14,7 @@ import "aos/dist/aos.css";
 function Portfolio() {
   useEffect(() => {
     aos.init();
-  });
+  }, []);
   return (
     <>
       <div className="bg-slate-900">
@@ -89,7 +89,7 @@ function Portfolio() {
               >
                 <div className="p-3">
                   <div className="relative">
-                    <img src={qrcode} alt="" className="rounded-md" />
+                    <img loading="lazy" decoding="async" src={qrcode} alt="" className="rounded-md" />
 
                     <div className="absolute top-1/2 -trandefault-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 scale-0 group-hover:scale-100 duration-500 ease-in-out">
                       <a
@@ -160,7 +160,7 @@ function Portfolio() {
               >
                 <div className="p-3">
                   <div className="relative">
-                    <img src={sphere} alt="" className="rounded-md" />
+                    <img loading="lazy" decoding="async" src={sphere} alt="" className="rounded-md" />
 
                     <div className="absolute top-1/2 -trandefault-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 scale-0 group-hover:scale-100 duration-500 ease-in-out">
                       <a
@@ -230,7 +230,7 @@ function Portfolio() {
               >
                 <div className="p-3">
                   <div className="relative">
-                    <img src={key} alt="" className="rounded-md" />
+                    <img loading="lazy" decoding="async" src={key} alt="" className="rounded-md" />
 
                     <div className="absolute top-1/2 -trandefault-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 scale-0 group-hover:scale-100 duration-500 ease-in-out">
                       <a
@@ -300,7 +300,7 @@ function Portfolio() {
               >
                 <div className="p-3">
                   <div className="relative">
-                    <img src={linker} alt="" className="rounded-md" />
+                    <img loading="lazy" decoding="async" src={linker} alt="" className="rounded-md" />
 
                     <div className="absolute top-1/2 -trandefault-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 scale-0 group-hover:scale-100 duration-500 ease-in-out">
                       <a
@@ -369,7 +369,7 @@ function Portfolio() {
               >
                 <div className="p-3">
                   <div className="relative">
-                    <img src={crescent} alt="" className="rounded-md" />
+                    <img loading="lazy" decoding="async" src={crescent} alt="" className="rounded-md" />
 
                     <div className="absolute top-1/2 -trandefault-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 scale-0 group-hover:scale-100 duration-500 ease-in-out">
                       <a

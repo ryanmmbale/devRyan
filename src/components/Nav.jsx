@@ -1,12 +1,12 @@
 import { TbMenu2 } from "react-icons/tb";
-import { logo } from "../pages";
+import { logo } from "../assets/images";
 
 function Nav() {
   return (
     <nav>
       {/* <!-- Navbar Brand Logo --> */}
       <a href="/" className="logo">
-        <img src={logo} className="h-10" alt="Ryan Logo" />
+        <img loading="lazy" decoding="async" src={logo} className="h-10" alt="Ryan Logo" />
       </a>
 
       {/* <!-- Mobile Menu Toggle Button (Offcanvas Button) --> */}

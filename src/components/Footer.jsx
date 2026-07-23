@@ -1,4 +1,5 @@
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { logo } from "../assets/images";
 
 function Footer() {
   return (
@@ -7,7 +8,7 @@ function Footer() {
         <div className="container py-20">
           <div className="grid md:grid-cols-4 grid-cols-2 gap-10 lg:gap-16">
             <div className="md:col-span-2 col-span-2">
-              <img src="assets/images/logo.png" className="h-10" alt="" />
+              <img loading="lazy" decoding="async" src={logo} className="h-10" alt="DevRyan" />
               <p className="md:w-3/4 text-base font-medium text-default-200 mt-6">
                 Gods plan is like a beautiful tapestry, the tragedy of being
                 human is we only get to see it from the back.
