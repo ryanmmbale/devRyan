@@ -1,0 +1,106 @@
+/* Self-contained skeleton loader — no dependency on the compiled utility CSS,
+   so it renders correctly even while a lazy route chunk is still downloading. */
+.skl {
+  --skl-bg: #0f172a; /* slate-900 — matches the page background */
+  --skl-base: rgba(255, 255, 255, 0.05);
+  --skl-hi: rgba(255, 255, 255, 0.11);
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--skl-bg);
+  overflow: hidden;
+}
+
+.skl__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Navbar row */
+.skl__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+.skl__navlinks {
+  display: flex;
+  gap: 1.5rem;
+}
+@media (max-width: 1024px) {
+  .skl__navlinks {
+    display: none;
+  }
+}
+
+/* Hero */
+.skl__hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 5rem 0 3rem;
+}
+
+/* Card grid */
+.skl__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding-bottom: 4rem;
+}
+@media (max-width: 900px) {
+  .skl__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .skl__grid {
+    grid-template-columns: 1fr;
+  }
+}
+.skl__card {
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Generic shimmering block */
+.skl__block {
+  border-radius: 0.5rem;
+  background-image: linear-gradient(
+    90deg,
+    var(--skl-base) 0%,
+    var(--skl-hi) 50%,
+    var(--skl-base) 100%
+  );
+  background-size: 200% 100%;
+  animation: skl-shimmer 1.4s ease-in-out infinite;
+}
+
+.skl__block--logo { width: 120px; height: 28px; }
+.skl__block--link { width: 64px; height: 16px; }
+.skl__block--title { width: min(480px, 80%); height: 40px; }
+.skl__block--subtitle { width: min(320px, 60%); height: 18px; }
+.skl__block--btn { width: 150px; height: 44px; border-radius: 0.5rem; margin-top: 0.5rem; }
+.skl__block--thumb { width: 100%; height: 160px; }
+.skl__block--line { width: 100%; height: 12px; }
+.skl__block--line-short { width: 60%; height: 12px; }
+
+@keyframes skl-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .skl__block {
+    animation: none;
+    background-image: none;
+    background-color: var(--skl-base);
+  }
+}

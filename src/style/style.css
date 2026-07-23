@@ -5,8 +5,12 @@ body {
   font-family: Jost, sans-serif;
   --tw-text-opacity: 1;
   color: rgb(100 116 139 / var(--tw-text-opacity));
+  background-color: #0f172a; /* slate-900 — prevents white flash before/while pages mount */
   margin: 0;
   line-height: inherit;
+}
+#root {
+  min-height: 100vh;
 }
 a,
 button,
