@@ -1,6 +1,4 @@
-import React from "react";
-
-import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import "./style/style.css";
 
 // Scripts
