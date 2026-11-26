@@ -4,8 +4,11 @@
   --skl-bg: #0f172a; /* slate-900 — matches the page background */
   --skl-base: rgba(255, 255, 255, 0.05);
   --skl-hi: rgba(255, 255, 255, 0.11);
-  min-height: 100vh;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
   width: 100%;
+  height: 100vh;
   background-color: var(--skl-bg);
   overflow: hidden;
 }

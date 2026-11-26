@@ -10,7 +10,7 @@ import imageG from "./images/ai/imgG.jpeg";
 import imageH from "./images/ai/imgH.jpeg";
 import imageI from "./images/ai/imgI.jpeg";
 import imageJ from "./images/ai/imgJ.jpg";
-import imageK from "./images/ai/imgK.png";
+import imageK from "./images/ai/imgK.webp";
 import imageL from "./images/ai/imgL.jpg";
 import imageM from "./images/ai/imgM.jpg";
 import imageN from "./images/ai/imgN.jpg";
